@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register here</title>
+    <style type="text/css">
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav
+        {
+            background-color: blue;
+            overflow: hidden;
+            background-size: 1330px ;
+            align-items: center;
+            left: 0;
+            right: 0;
+            box-shadow: 0 0 10px;
+            z-index: 1000;
+            box-shadow: white;
+
+
+        }
+        nav ul li
+        {
+            float:  Left;
+            list-style: none;
+            margin: 7px;
+        }
+        nav ul li a
+        {
+            margin:  3px;
+            padding: 3px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: white;
+        }
+        a:hover
+        {
+            color:black
+        }
+    </style>
+</head>
+<body>
+    <div style="margin: 40px; margin-right: 40px;">
+    <center><h1 style="color: blue ; background-color: aqua;"><i> Online Application</i></h1></center>
+   
+    <nav>
+        <ul>
+            <li> <a href="./index.html">Home</a></li>
+            
+            <li><a href="./course.html">Our Courses</a></li>
+            <li><a href="./ref.html">Reference</a></li>
+            <li><a href="./facilities.html">Fecilities</a></li>
+            <li> <a href="./register.html">Register Here</a></li>
+            <li> <a href="./contact.html">Contact us</a></li>
+    
+        </ul>
+    </nav>
+    <br><br><br><br><center><img src="photos/intro.jpg" height=600px width=1270px></center><br><br>
+
+
+    <form action="./application.py" method="post" style="font-size: 1.5rem; color: rgb(145, 44, 8);">
+        <lable>Full Name:</lable><input type="text" name="name"><br><br>
+        <lable>Date of Birth:</lable><input type="date" name="dob"><br><br>
+        <lable>Email:</lable><input type="email" name="email"><br><br>
+        <lable>Phone Number</lable><input type="number" name="phone"><br><br>
+        <lable>Address:</lable><textarea name="address"></textarea><br><br>
+        <lable>High School:</lable><input type="text" name="highschool"><br><br>
+        <lable>GPA:</lable><input type="number" step="0.01" name="gpa"><br><br>
+        <lable>Sat Act Score:</lable><input type="number" name="satActScore"><br><br>
+        <lable>Major:</lable><select name="major">
+            <option value="engineering">Engineering Courses</option> <br><br>
+        <option value="arts">Arts Courses</option><br><br>
+        <option value="science">Science Courses</option><br><br>
+        <option value="nursing">Nursing Courses</option><br><br>
+        <option value="education">Teacher Training Courses</option><br><br>
+
+        </select><br><br>
+        <input type="submit" value="Submit Application">
+    </form>
+</div>
+</body>
+</html>
+
